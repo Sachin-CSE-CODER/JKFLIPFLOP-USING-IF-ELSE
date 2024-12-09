@@ -1,48 +1,59 @@
-# JKFLIPFLOP-USING-IF-ELSE
+### NAME : SACHIN.S
+### REG NO.: 24900576
+# FULL_ADDER_SUBTRACTOR
 
-**AIM:** 
+Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
-To implement  JK flipflop using verilog and validating their functionality using their functional tables
+# AIM:
 
-**SOFTWARE REQUIRED:**
+To design a Full Adder and Full Subtractor circuit and verify its truth table in Quartus using Verilog programming.
 
-Quartus prime
+# Equipments Required:
 
-**THEORY**
+Hardware – PCs, Cyclone II , USB flasher
 
-**JK Flip-Flop**
+Software – Quartus prime
 
-JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
+# Full Adder and Full Subtractor
 
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/a649c30b-232b-4558-b188-fd6c09845180)
+# Full Adder
+
+Full adder is a digital circuit used to calculate the sum of three binary bits. It consists of three inputs and two outputs. Two of the input variables, denoted by A and B, represent the two significant bits to be added. The third input, Cin, represents the carry from the previous lower significant position. Two outputs are necessary because the arithmetic sum of three binary digits ranges in value from 0 to 3, and binary 2 or 3 needs two digits. The two outputs are sum and carry.
+
+Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin 
+
+Carry = AB + ACin + BCin
+
+![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/0f30ba51-5ffb-4198-845f-18e054f675e7)
+
+# Figure -1 FULL ADDER
+
+# Full Subtractor
+
+A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
+
+![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
+
+Diff = A ⊕ B ⊕ Bin 
+
+Borrow out = A'Bin + A'B + BBin
+
+# Truthtable
+![WhatsApp Image 2024-11-28 at 2 16 54 PM](https://github.com/user-attachments/assets/bffe62d4-f457-491e-88ac-394a9b981e0c)
+
+# Procedure
+Implementing FULL ADDER AND SUBTRACTOR in Verilog HDL (Hardware Description Language) involves translating the simplified Boolean expressions into Verilog code to describe the behavior of digital circuits. The basic building blocks in Verilog is module. The module represent a combinational circuit. Use logical operators (&, |, ~, ^) to implement Boolean functions directly. Use built-in gate primitives for basic functions. Use University program VWF to verify the functionality of your Verilog modules. Create waveform and check outputs against expected results.
+
+# Program:
+![Screenshot 2024-11-28 141059](https://github.com/user-attachments/assets/21746069-ffb5-40c5-8b70-028463084459)
 
 
-This circuit has two inputs J & K and two outputs Qtt & Qtt’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as S = J Qtt’ and R = KQtt in order to utilize the modified SR flip-flop for 4 combinations of inputs. The following table shows the state table of JK flip-flop.
+# RTL Schematic:
+![Screenshot 2024-11-28 140803](https://github.com/user-attachments/assets/0dd0878a-4259-41a2-be20-9061a0554fcf)
 
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/c4360742-e8a8-4937-b089-c46c0433f9a3)
+# Output Timing Waveform:
+![Screenshot 2024-11-28 141313](https://github.com/user-attachments/assets/0b09f08e-ec58-4a38-84b0-e78742e2a21b)
 
- 
-Here, Qtt & Qt+1t+1 are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of JK flip-flop. Present Inputs Present State Next State
- 
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/6c275261-a6d5-4c37-a3a7-1e88ca11c4cd)
+# Result:
 
-By using three variable K-Map, we can get the simplified expression for next state, Qt+1t+1. Three variable K-Map for next state, Qt+1t+1 is shown in the following figure.
- 
-![image](https://github.com/naavaneetha/JKFLIPFLOP-USING-IF-ELSE/assets/154305477/5174f41b-0ce0-4329-a372-6d1943ea6673)
-
-The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
-
-**Procedure**
-
-/* write all the steps invloved */
-
-**PROGRAM**
-
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
-
-**RTL LOGIC FOR FLIPFLOPS**
-
-**TIMING DIGRAMS FOR FLIP FLOPS**
-
-**RESULTS**
+Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
