@@ -1,6 +1,6 @@
 ### NAME: SACHIN.S
 ### REG NO.:24900576
-# EXP5:JK_flipflop
+# EXP5:IMPLEMENTATION OF JK_flipflop
 
 # AIM:
 
